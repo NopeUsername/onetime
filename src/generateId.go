@@ -19,5 +19,5 @@ func GenerateID(n int) string {
 		result += string(randomChar)
 	}
 
-	return result + ".lua"
+	return result
 }
