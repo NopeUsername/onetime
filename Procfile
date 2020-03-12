@@ -1,1 +1,1 @@
-web: ls
+web: go run ./src
