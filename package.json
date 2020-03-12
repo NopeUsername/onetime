@@ -1,8 +1,9 @@
 {
-    "name": "hello-golang",
-    "version": "0.0.1",
-    "description": "A simple Go HTTP application.",
+    "name": "onetime-link-generator",
+    "version": "1.0.0",
+    "description": "A simple tool to generates one-time links.",
+    "main": "src/main.go",
     "scripts": {
-        "start": "go run src/main.go"
+        "start": "go run ./src"
     }
 }
