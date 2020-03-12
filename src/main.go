@@ -86,7 +86,6 @@ func downloadHandler(w http.ResponseWriter, r *http.Request) {
 
 	for {
 		_, err := file.Read(buf)
-		w.Write(buf)
 
 		if err != nil {
 			if err == io.EOF {
@@ -94,6 +93,7 @@ func downloadHandler(w http.ResponseWriter, r *http.Request) {
 			}
 			log.Fatal(err)
 		}
+		w.Write(buf)
 	}
 	w.Write([]byte("</body></html>"))
 
