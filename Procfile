@@ -1,1 +1,1 @@
-web: bin/onetime-link-generator
+web: ls bin
