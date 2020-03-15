@@ -21,7 +21,7 @@ func serveWebsite() {
 		port = ":" + os.Getenv("PORT")
 	}
 
-	http.ListenAndServe(port, nil)
+	http.ListenAndServe(port, "cert.pem", "key.pem", nil)
 }
 
 func uploadHandler(w http.ResponseWriter, r *http.Request) {
